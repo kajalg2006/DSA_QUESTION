@@ -16,7 +16,7 @@ void linkedlistTraversal(struct Node *head)
     } while (ptr != head);
 }
 
-struct Node *insertAtFirst(struct Node *head, int data)
+struct Node *insertAtEnd(struct Node *head, int data)
 {
     Node *ptr;
     ptr = new Node();
@@ -62,6 +62,6 @@ int main()
     linkedlistTraversal(head);
 
     cout << "linked list afterinsertion" << endl;
-    head = insertAtFirst(head,80);
+    head = insertAtEnd(head,80);
     return 0;
 }
